@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+       <title>Contact Us | Sports Romeo</title>
+       <link rel="stylesheet" type="text/css" href="css/style.css"/>
+       <link rel="stylesheet" type="text/css" href="css/pav.css"/>
+	   <script src="js/script.js"></script>
+    </head>
+    <body>
+    	 <div id="sports-nav" class="sports-nav-outer">
+		  <div onclick="hideprofilebox()" class="brand-logo">
+			  <h2>Sports Romeo</h2>
+		  </div>
+		  <div onclick="hideprofilebox()" class="vertical-middle">
+			<div class="sports-nav-inner-top">
+				<input class="search-box" type="text" placeholder="Search for Player, Activity or arena"/>
+				<a class="search-button" href="#">Search</a>
+			</div>
+			<div id="barnav" class="sports-nav-inner-bottom">
+			   <a class="nav-links" href="index.html">Home</a>
+			   <a class="nav-links" href="matches.html">Matches</a>
+			   <a class="nav-links" href="arena.html">Arena</a>
+			   <a class="nav-links" href="pavillion.html">Pavilions</a>
+			   <a class="nav-links" href="Coaches.html">Coaches</a>
+			   <a class="nav-links" href="about.html">About Us</a>
+			</div>
+			<div id="search-bar" class="search-bar">
+			   	 <input class="search-bar-input" placeholder="Search for any areana, Pavallian, coaches, or anything else" type="text" name="">
+			   </div>
+		  </div>
+		  <div class="search-butt">
+		  	<img id="search-icon" onclick="searchOpen()" class="search-ico" src="img/icons/search.svg"/>
+		  	<img id="close-icon" onclick="searchClose()" class="search-ico none" src="img/icons/close.svg"/>
+		  </div>
+		  <div class="nav-login none">
+			 <a id="login-button" onclick="show()" class="login-button-nav " href="#">Login / Sign Up</a>
+		  </div>
+		  <div id="profile-button" onclick="showprofilebox()" class="profile-button">
+		  	<img class="profile-button-img" src="img/profile/profile1.png"/>
+		  	<p class="profile-button-name">Manishanker Sharma</p>
+		  </div>
+	  </div>
+	  <!--profile popup box starts here-->
+	  <div id="profile-popup" class="profile-popup">
+	  <div class="">
+	  	<img onclick="hideprofilebox()" class="close-pop" src="img/icons/close.svg"/>
+	  </div>
+	  	<div class="profile-popup-content">
+	  	  <div class="profile-show">
+	  	  <img class="prof-img" src="img/profile/profile1.png"/>
+	  	  	<div class="prof-details">
+		   <p class="prof-name">Manishanker Sharma</p>
+	  	   <p class="email-profile-popup">manitesharma@gmail.com</p>
+	  	  	</div>
+	  	  </div>
+	  	   <a href="ProfilePage.html" class="links-profile-popup">Profile</a>
+	  	   <a href="#" class="links-profile-popup">My Activities</a>
+	  	   <a href="#" class="links-profile-popup">My Friends</a>
+	  	   <a href="Team.html" class="links-profile-popup">My Teams</a>
+	  	   <a href="Meetups.html" class="links-profile-popup">My MeetUp</a>
+	  	   <a href="Invites.html" class="links-profile-popup">My Invites</a>
+	  	   <a href="policy.html" class="links-profile-popup">Privacy Policy</a>
+	  	   <a href="Index.html" onclick="show()" class="links-profile-popup logout">Logout</a>
+	  	</div>
+	  </div>
+	  <!--profile popup box ends here-->
+	  <!-- footer starts here-->
+           <div class="footer-bottom">
+           	<a class="footer-link foot1" href="terms.html">Terms of use</a>
+           	<a class="footer-link" href="policy.html">Privecy Policy</a>
+           	<a class="footer-link" href="support.html">Support</a>
+           	<a class="footer-link" href="ContactUs.html">Contact Us</a>
+           </div>
+	  <!-- footer ends here-->
+
+	  <!-- pavallian content starts here -->
+	  <div onclick="hideprofilebox()" class="pavallian">
+	  <h1 class="underpro">Under Production</h1>
+	  </div>
+	  </div>
+    </body>
+    </html>

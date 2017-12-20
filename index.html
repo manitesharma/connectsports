@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+       <title>Home | Sports Romeo</title>
+       <link rel="stylesheet" type="text/css" href="css/style.css"/>
+	    <script src="js/jquery-3.2.0.min.js"></script>
+	    <link href="https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700&amp;subset=devanagari,latin-ext" rel="stylesheet">
+		<script src="js/script.js"></script>
+    </head>
+    <body>
+         	 <div id="sports-nav" class="sports-nav-outer nav-up">
+		  <div onclick="hideprofilebox()" class="brand-logo">
+			  <h2>Sports Romeo</h2>
+		  </div>
+		  <div onclick="hideprofilebox()" class="vertical-middle">
+			<div class="sports-nav-inner-top">
+				<input class="search-box" type="text" placeholder="Search for Player, Activity or arena"/>
+				<a class="search-button" href="#">Search</a>
+			</div>
+			<div id="barnav" class="sports-nav-inner-bottom">
+			   <a class="nav-links active-nav" href="index.html">Home</a>
+			   <a class="nav-links" href="matches.html">Matches</a>
+			   <a class="nav-links" href="arena.html">Arena</a>
+			   <a class="nav-links" href="pavillion.html">Pavilions</a>
+			   <a class="nav-links" href="Coaches.html">Coaches</a>
+			   <a class="nav-links" href="about.html">About Us</a>
+			</div>
+			<div id="search-bar" class="search-bar">
+			   	 <input class="search-bar-input" placeholder="Search for any areana, Pavallian, coaches, or anything else" type="text" name="">
+			   </div>
+		  </div>
+		  <div class="search-butt">
+		  	<img id="search-icon" onclick="searchOpen()" class="search-ico" src="img/icons/search.svg"/>
+		  	<img id="close-icon" onclick="searchClose()" class="search-ico none" src="img/icons/close.svg"/>
+		  </div>
+		  <div class="nav-login">
+			 <a id="login-button" onclick="show()" class="login-button-nav " href="#">Login / Sign Up</a>
+		  </div>
+		  <div id="profile-button" onclick="showprofilebox()" class="profile-button none">
+		  	<img class="profile-button-img" src="img/profile/profile1.png"/>
+		  	<p class="profile-button-name">Manishanker Sharma</p>
+		  </div>
+	  </div>
+	  <!--profile popup box starts here-->
+	  <div id="profile-popup" class="profile-popup">
+	  <div class="">
+	  	<img onclick="hideprofilebox()" class="close-pop" src="img/icons/close.svg"/>
+	  </div>
+	  	<div class="profile-popup-content">
+	  	  <div class="profile-show">
+	  	  <img class="prof-img" src="img/profile/profile1.png"/>
+	  	  	<div class="prof-details">
+		   <p class="prof-name">Manishanker Sharma</p>
+	  	   <p class="email-profile-popup">manitesharma@gmail.com</p>
+	  	  	</div>
+	  	  </div>
+	  	   <a href="ProfilePage.html" class="links-profile-popup">Profile</a>
+	  	   <a href="#" class="links-profile-popup">My Activities</a>
+	  	   <a href="#" class="links-profile-popup">My Friends</a>
+	  	   <a href="Team.html" class="links-profile-popup">My Teams</a>
+	  	   <a href="Meetups.html" class="links-profile-popup">My MeetUp</a>
+	  	   <a href="Invites.html" class="links-profile-popup">My Invites</a>
+	  	   <a href="policy.html" class="links-profile-popup">Privacy Policy</a>
+	  	   <a href="Index.html" onclick="show()" class="links-profile-popup logout">Logout</a>
+	  	</div>
+	  </div>
+	  <!--profile popup box ends here-->
+	  <!-- footer starts here-->
+           <div id="footer" class="footer-bottom none">
+           	<a class="footer-link foot1" href="terms.html">Terms of use</a>
+           	<a class="footer-link" href="policy.html">Privecy Policy</a>
+           	<a class="footer-link" href="support.html">Support</a>
+           	<a class="footer-link" href="ContactUs.html">Contact Us</a>
+           </div>
+	  <!-- footer ends here-->
+    <!--login menue starts here its independent with absolute position-->
+<div id="welcome" class="welcome-box">
+<img class="welcome-img" src="img/home/front.jpg" />
+	<div class="intro-line-box">
+	<h2>Explore the world of Sports</h2>
+	
+	<div class="choose">
+		<h3 class="choose-head cr1">Choose Right</h3>
+		<div class="choose-sub csa1">
+			<img class="choose-right-img" src="img/intro/team.svg"/>
+			<p class="choose-right-head">Team</p>
+		</div>
+		<div class="choose-sub csa2">
+			<img class="choose-right-img" src="img/intro/coach.svg"/>
+			<p class="choose-right-head">Mentor</p>
+		</div>
+		<div class="choose-sub csa3">
+			<img class="choose-right-img" src="img/intro/place.svg"/>
+			<p class="choose-right-head">Place</p>
+		</div>
+	</div>
+	<div class="choose none">
+		<h3 class="manage-head cr2">Manage</h3>
+		<div class="choose-sub csb1">
+			<img class="choose-right-img" src="img/intro/profile.svg"/>
+			<p class="choose-right-head">Profile</p>
+		</div>
+		<div class="choose-sub csb2">
+			<img class="choose-right-img" src="img/intro/performance.svg"/>
+			<p class="choose-right-head">Performance</p>
+		</div>
+		<div class="choose-sub csb3">
+			<img class="choose-right-img" src="img/intro/Skill.svg"/>
+			<p class="choose-right-head">Skills</p>
+		</div>
+		<div class="choose-sub csb4">
+			<img class="choose-right-img" src="img/intro/Score.svg"/>
+			<p class="choose-right-head">Scores</p>
+		</div>
+	</div>
+	<div class="dive">
+		<p class="dive1">So let's dive into The Sporting World because we are Sports Romeo</p>
+		<p class="dive2">Are you ?</p>
+		<p>
+	</div>
+	</div>
+	<div class="login-box2">
+		<h3>Login to Acess Sports Romeo</h3>
+		<input placeholder="Email adress" type="email"/>
+		<input placeholder="Password" type="password"/>
+		<div class="login-2">
+			<a class="log-button" onclick="login()" href="#">Log In</a>
+			<a class="log-button facebook" onclick="login()" href="#">Log In with facebook</a>
+		</div>
+		<a class="forgot" href="#">Forgot your Password ?</a>
+		
+		<p class="newto" href="#">New to Sports Romeo <a class="signup" href="#">Sign Up Now</a></p>
+	</div>
+	<a href="#" onclick="hide()" class="sneak">Lets take a Sneek Peek into Sports Romeo World</a>
+</div>
+<!-- welcome box ends here-->
+<div id="home-box" onclick="hideprofilebox()" class="home-content">
+<!--left section of hoem STARTS here-->
+	<div class="left">
+		<div class="featured-arena">
+		    <h3 class="card-head">Featured Arenas nearby you</h3>
+			<div class="arena-card">
+				<img class="arena-photo" src="img/profile/profile1.png" />
+				<div class="arena-dis">
+				<h3>Ramsheth Thakur International Sports Comlpex</h3>
+				<p>Sector 16 A, Uran Road, Ulwe</p>
+				<p>7 km away</p>
+			</div>
+			<div class="detail-sec">
+				<div class="arena-sports-list">
+					<img class="arena-sports" src="img/badminton.svg"/>
+					<img class="arena-sports" src="img/bowling.svg"/>
+					<img class="arena-sports" src="img/chess.svg"/>
+					<img class="arena-sports" src="img/cricket.svg"/>
+					<img class="arena-sports" src="img/golf.svg"/>
+					<img class="arena-sports" src="img/tennis.svg"/>
+					<p class="more-sports">+2</p>
+				</div>
+			    <a class="arena-details-link" href="#">Details</a>
+			</div>
+			</div>
+			<div class="arena-card">
+				<img class="arena-photo" src="img/profile/profile1.png" />
+				<div class="arena-dis">
+				<h3>Ramsheth Thakur International Sports Comlpex</h3>
+				<p>Sector 16 A, Uran Road, Ulwe</p>
+				<p>7 km away</p>
+			</div>
+			<div class="detail-sec">
+				<div class="arena-sports-list">
+					<img class="arena-sports" src="img/badminton.svg"/>
+					<img class="arena-sports" src="img/bowling.svg"/>
+					<img class="arena-sports" src="img/chess.svg"/>
+					<img class="arena-sports" src="img/cricket.svg"/>
+					<img class="arena-sports" src="img/golf.svg"/>
+					<img class="arena-sports" src="img/tennis.svg"/>
+					<p class="more-sports">+2</p>
+				</div>
+			    <a class="arena-details-link" href="#">Details</a>
+			</div>
+			</div>
+
+			<p class="read-more">View more..</p>
+		</div>
+
+		<div class="featured-arena">
+		    <h3 class="card-head">Featured Coaches nearby you</h3>
+			<div class="arena-card">
+				<img class="arena-photo" src="img/profile/profile1.png" />
+				<div class="arena-dis">
+				<h3>Jagdish Chander</h3>
+				<p>Sector 16 A, Uran Road, Ulwe</p>
+				<p>7 km away</p>
+			</div>
+			<div class="detail-sec">
+				<div class="arena-sports-list">
+					<img class="arena-sports" src="img/badminton.svg"/>
+					<img class="arena-sports" src="img/bowling.svg"/>
+					<img class="arena-sports" src="img/chess.svg"/>
+					<img class="arena-sports" src="img/cricket.svg"/>
+					<img class="arena-sports" src="img/golf.svg"/>
+					<img class="arena-sports" src="img/tennis.svg"/>
+					<p class="more-sports">+2</p>
+				</div>
+			    <a class="arena-details-link" href="#">Details</a>
+			</div>
+			</div>
+
+			<p class="read-more">View more..</p>
+		</div>
+
+	</div>
+	<!--left section of hoem ends here-->
+	<!-- middle section of homepage where we show posts starts here-->
+	<div class="middle">
+	<!--postcard starts herere-->
+		<div class="post-card">
+			<div class="person-identity">
+				<img class="profile-image-post" alt="profile image" src="img/profile/profile1.png"/>
+				<div class="name-section">
+					<h4>Jonathan Deo</h4>
+				    <p>12 Hr ago</p>
+				</div>
+			</div>
+			<div class="post-content">
+				<p>lorem ipsum doler sit amet something like this post only contain text so here it is to all of you now I am all out of content so cant continue to write all this stuff Thanku.<p>
+			</div>
+			<div class="respond-section">
+				<div class="likes">
+			    	<img class="like-button" alt="like" src="img/icons/like.svg"/>
+					<p>+30 more likes</p>
+				</div>
+				<div class="comment">
+					<div class="input-comment">
+						<input type="text" name="comment" placeholder="Write your comment here and hit enter">
+					</div>
+					<div class="read-comment">
+						<div class="comments">
+							<div class="comment-identity">
+								<img class="comment-img" src="img/profile/profile1.png"/>
+								<h4>Manishanker Sharma</h4>
+								<p>1 Hr ago </p>
+								<p class="reply">Reply</p>
+							</div>
+							<p class="comment-content">woow wthat a gerat example of useless post and nothing is in there anyway we read it and post something on it just to make sure that we get noticeed and get some good friends and dope image on social media.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--postcard ends herere-->
+			<!--postcard starts herere-->
+		<div class="post-card">
+			<div class="person-identity">
+				<img class="profile-image-post" alt="profile image" src="img/profile/profile1.png"/>
+				<div class="name-section">
+					<h4>Jonathan Deo</h4>
+				    <p>12 Hr ago</p>
+				</div>
+			</div>
+			<div class="post-content">
+				<p>lorem ipsum doler sit amet something like this post only contain text so here it is to all of you now I am all out of content so cant continue to write all this stuff Thanku.<p>
+				<img class="post-image" src="img/home/front.jpg"/>
+			</div>
+			<div class="respond-section">
+				<div class="likes">
+			    	<img class="like-button" alt="like" src="img/icons/like.svg"/>
+					<p>+30 more likes</p>
+				</div>
+				<div class="comment">
+						<div class="input-comment">
+						<input type="text" name="comment" placeholder="Write your comment here and hit enter">
+					</div>
+					<div class="read-comment">
+						<div class="comments">
+							<div class="comment-identity">
+								<img class="comment-img" src="img/profile/profile1.png"/>
+								<h4>Manishanker Sharma</h4>
+								<p>1 Hr ago </p>
+								<p class="reply">Reply</p>
+							</div>
+							<p class="comment-content">woow wthat a gerat example of useless post and nothing is </p>
+						</div>
+						<div class="comments">
+							<div class="comment-identity">
+								<img class="comment-img" src="img/profile/profile1.png"/>
+								<h4>Manishanker Sharma</h4>
+								<p>1 Hr ago </p>
+								<p class="reply">Reply</p>
+							</div>
+							<p class="comment-content">woow wthat a gerat example of useless post on social media.</p>
+						</div>
+						<div class="comments">
+							<div class="comment-identity">
+								<img class="comment-img" src="img/profile/profile1.png"/>
+								<h4>Manishanker Sharma</h4>
+								<p>1 Hr ago </p>
+								<p class="reply">Reply</p>
+							</div>
+							<p class="comment-content">woow wthat a gerat exampe good friends and dope image on social media.</p>
+						</div>
+					</div>
+					<p class="read-more">Read more comments</p>
+				</div>
+			</div>
+		</div>
+		<!--postcard ends herere-->
+			<!--postcard ends herere-->
+		<div class="post-card">
+			<div class="person-identity">
+				<img class="profile-image-post" alt="profile image" src="img/profile/profile1.png"/>
+				<div class="name-section">
+					<h4>Jonathan Deo</h4>
+				    <p>12 Hr ago</p>
+				</div>
+			</div>
+			<div class="post-content">
+				<p>lorem ipsum doler sit amet something like this post only contain text so here it is to all of you now I am all out of content so cant continue to write all this stuff Thanku.<p>
+			</div>
+			<div class="respond-section">
+				<div class="likes">
+			    	<img class="like-button" alt="like" src="img/icons/like.svg"/>
+					<p>+30 more likes</p>
+				</div>
+				<div class="comment">
+					<div class="input-comment">
+						<input type="text" name="comment" placeholder="Write your comment here and hit enter">
+					</div>
+					<div class="read-comment">
+						<div class="comments">
+							<div class="comment-identity">
+								<img class="comment-img" src="img/profile/profile1.png"/>
+								<h4>Manishanker Sharma</h4>
+								<p>1 Hr ago </p>
+								<p class="reply">Reply</p>
+							</div>
+							<p class="comment-content">woow wthat a gerat example of useless post and nothing is in there anyway we read it and post something on it just to make sure that we get noticeed and get some good friends and dope image on social media.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--postcard ends herere-->
+			<!--postcard ends herere-->
+		<div class="post-card">
+			<div class="person-identity">
+				<img class="profile-image-post" alt="profile image" src="img/profile/profile1.png"/>
+				<div class="name-section">
+					<h4>Jonathan Deo</h4>
+				    <p>12 Hr ago</p>
+				</div>
+			</div>
+			<div class="post-content">
+				<p>lorem ipsum doler sit amet something like this post only contain text so here it is to all of you now I am all out of content so cant continue to write all this stuff Thanku.<p>
+			</div>
+			<div class="respond-section">
+				<div class="likes">
+			    	<img class="like-button" alt="like" src="img/icons/like.svg"/>
+					<p>+30 more likes</p>
+				</div>
+				<div class="comment">
+					<div class="input-comment">
+						<input type="text" name="comment" placeholder="Write your comment here and hit enter">
+					</div>
+					<div class="read-comment">
+						<div class="comments">
+							<div class="comment-identity">
+								<img class="comment-img" src="img/profile/profile1.png"/>
+								<h4>Manishanker Sharma</h4>
+								<p>1 Hr ago </p>
+								<p class="reply">Reply</p>
+							</div>
+							<p class="comment-content">woow wthat a gerat example of useless post and nothing is in there anyway we read it and post something on it just to make sure that we get noticeed and get some good friends and dope image on social media.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--postcard ends herere-->
+			<!--postcard ends herere-->
+		<div class="post-card">
+			<div class="person-identity">
+				<img class="profile-image-post" alt="profile image" src="img/profile/profile1.png"/>
+				<div class="name-section">
+					<h4>Jonathan Deo</h4>
+				    <p>12 Hr ago</p>
+				</div>
+			</div>
+			<div class="post-content">
+				<p>lorem ipsum doler sit amet something like this post only contain text so here it is to all of you now I am all out of content so cant continue to write all this stuff Thanku.<p>
+			</div>
+			<div class="respond-section">
+				<div class="likes">
+			    	<img class="like-button" alt="like" src="img/icons/like.svg"/>
+					<p>+30 more likes</p>
+				</div>
+				<div class="comment">
+					<div class="input-comment">
+						<input type="text" name="comment" placeholder="Write your comment here and hit enter">
+					</div>
+					<div class="read-comment">
+						<div class="comments">
+							<div class="comment-identity">
+								<img class="comment-img" src="img/profile/profile1.png"/>
+								<h4>Manishanker Sharma</h4>
+								<p>1 Hr ago </p>
+								<p class="reply">Reply</p>
+							</div>
+							<p class="comment-content">woow wthat a gerat example of useless post and nothing is in there anyway we read it and post something on it just to make sure that we get noticeed and get some good friends and dope image on social media.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--postcard ends herere-->
+	</div>
+	<!-- middle section of homepage where we show posts ends here-->
+	<!--Rigt section starts here it contains notfications and other stuff-->
+	<div class="right">
+		<div class="notification-card">
+		<h4 class="card-head">Recent Notifications</h4>
+			<div class="notification">
+			    <img class="noti-image" src="img/profile/profile1.png">
+				<p class="noti-name">Manishanker Sharma</p>
+				<p class="noti-time">31 march 2017 12:30 Pm</p>
+				<p class="noti-says">commented on your post "this is useless thinking of the...."</p>
+			</div>
+			<div class="notification">
+			    <img class="noti-image" src="img/profile/profile1.png">
+				<p class="noti-name">Manishanker Sharma</p>
+				<p class="noti-time">31 march 2017 12:30 Pm</p>
+				<p class="noti-says">commented on your post "this is useless thinking of the...."</p>
+			</div>
+			<div class="notification">
+			    <img class="noti-image" src="img/profile/profile1.png">
+				<p class="noti-name">Manishanker Sharma</p>
+				<p class="noti-time">31 march 2017 12:30 Pm</p>
+				<p class="noti-says">commented on your post "this is useless thinking of the...."</p>
+			</div>
+			<div class="notification">
+			    <img class="noti-image" src="img/profile/profile1.png">
+				<p class="noti-name">Manishanker Sharma</p>
+				<p class="noti-time">31 march 2017 12:30 Pm</p>
+				<p class="noti-says">commented on your post "this is useless thinking of the... dscbksadjb acksdbc sbdkcnask  ckasck ansd."</p>
+			</div>
+			<div class="notification">
+			    <img class="noti-image" src="img/profile/profile1.png">
+				<p class="noti-name">Manishanker Sharma</p>
+				<p class="noti-time">31 march 2017 12:30 Pm</p>
+				<p class="noti-says">commented on your post "this is useless thinking of the...."</p>
+			</div>
+			<div class="notification">
+			    <img class="noti-image" src="img/profile/profile1.png">
+				<p class="noti-name">Manishanker Sharma</p>
+				<p class="noti-time">31 march 2017 12:30 Pm</p>
+				<p class="noti-says">commented on your post "this is useless thinking of the...."</p>
+			</div>
+			<p class="read-more">Show all Notification</p>
+		</div>
+	</div>
+</div>
+	 
+    </body>
+    </html>

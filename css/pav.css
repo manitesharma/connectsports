@@ -1,0 +1,846 @@
+.pavallian{
+	position: fixed;
+	top: 10%;
+	width: 100%;
+	margin: -8px;
+	z-index: -30;
+	overflow-y: hidden;
+	height: 100%;
+}
+.extreem-left{
+	width: 26%;
+	float: left;
+	margin: 1% 0.5%;
+}
+.pav-left{
+	width: 51%;
+	float: left;
+	overflow-y: scroll;
+	height: 90%;
+}
+.pav-left::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+.pav-left::-webkit-scrollbar
+{
+    width: 5px;
+    background-color: #fff;
+}
+
+.pav-left::-webkit-scrollbar-thumb
+{
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: var(--high-back-color);
+}
+.pav-right{
+	width:21%;
+	float: left;
+	margin:2% 0.5%;
+	font-family: roboto;
+	box-shadow: 0px 1px 3px -1px rgba(0,0,0,0.4);
+}
+.filter-text{
+	font-family: roboto;
+	font-weight: 500;
+	letter-spacing: 0.1em;
+	font-size: 0.9em;
+	width: 100%;
+	text-align: center;
+	color: var(--head-color);
+
+}
+.filter-card{
+	padding: 0.5em 5%;
+	border-top: 1px solid var(--border-color);
+	float: left;
+	width: 90%;
+}
+.filters{
+	width: 100%;
+	float: left;
+	padding: 2% 0%;
+	background-color: #fff;
+}
+.filter-head{
+	margin: 0em;
+	font-weight: 700;
+	font-size: 1em;
+	float: left;
+	width: 100%;
+	letter-spacing: 0.1em;
+	color: var(--head-color);
+
+}
+.filter-defination{
+	margin:0.5em 1em;
+	font-size: 0.8em;
+	float: left;
+	width: 90%;
+	color: var(--info-color);
+}
+.filters input{
+	width: 90%;
+	padding: 1em;
+	margin: 0.5em 0em;
+	border: 1px solid var(--border-color);
+
+}
+.sports-link:hover{
+	 transition: all 200ms;
+	 background-color: var(--dim-back-color);
+	 cursor: pointer;
+}
+.sports-filter{
+	transition: all 300ms;
+	background-color: #fff;
+	width: 21%;
+	float: left;
+	position: absolute;
+	height: 0px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	top: 25%;
+	right: 0.5%;
+	z-index: 66;
+	opacity: 0.2;
+	transform: scale(1);
+	transform-origin: right;
+}
+.show-sports-filter{
+	transition: all 400ms;
+	top: 4%;
+	height: 506px;
+	opacity: 1;
+	display: block;
+}
+.select-filter{
+	text-align: center;
+	font-size: 0.9em;
+}
+.sports-filter-list::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+.sports-filter-list::-webkit-scrollbar
+{
+    width: 5px;
+    background-color: #fff;
+}
+
+.sports-filter-list::-webkit-scrollbar-thumb
+{
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: var(--high-back-color);
+}
+.sports-filter-list{
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+    width: 98%;
+    height: 388px;
+    overflow-y: scroll;
+    float: left;
+    padding: 2% 0%;
+}
+.sports-filter-list:hover{
+}
+.sports-filter-item{
+	width: 92%;
+	float: left;
+	color: var(--info-color);
+	border-top: 1px solid rgba(0,0,0,0.1);
+	padding: 2% 4%;
+}
+.sports-filter-item:hover{
+	transition: all 100ms;
+	color: rgba(255,255,255,1);
+	cursor: pointer;
+	background-color: var(--high-back-color);
+}
+.sports-filter-item-img-outer{
+    width: 7%;
+	float: left;
+	border-radius: 50%;
+	padding: 2%;
+	opacity: 0.5;
+	background-color: var(--high-back-color);
+}
+.sports-filter-item-img{
+	width: 100%;
+	float: left;
+
+}
+.sports-filter-item-text{
+	float: left;
+	margin: 1% 1em;
+	font-size: 0.6;
+
+}
+.gender-option{
+	padding: 0.7em;
+	font-size: 0.8em;
+	text-align: center;
+	width: 35%;
+	text-decoration: none;
+	background-color: transparent;
+	color: var(--high-back-color);
+	border:1px solid var(--high-back-color);
+	margin: 2.5%;
+	float: left;
+}
+.gender-option:hover{
+	transition: all 100ms;
+	background-color: var(--high-back-color);
+	color: var(--high-color);
+	border:1px solid var(--high-back-color);
+}
+.filter-action-button{
+	float: left;
+	width: 30%;
+	margin-left: 2%;
+	padding: 0.9em 2%;
+	font-weight: 500;
+	background-color: transparent;
+	color: var(--dim-color);
+	text-align: center;
+	text-decoration: none;
+}
+.filter-action-button:hover{
+	transition: all 300ms;
+	background-color: var(--dim-back-color);
+}
+.primary{
+	width: 56%;
+	background-color: transparent;
+    border: 1px solid var(--high-back-color);
+	color: var(--high-back-color);
+}
+.primary:hover{
+	transition: all 300ms;
+	background-color: var(--high-back-color);
+	color: var(--high-color);
+}
+
+/* left user cards css goes here */
+.user-list{
+	float: left;
+	width: 98%;
+	margin:4% 0.5%;
+	background-color: #fff;
+	box-shadow: 0px 1px 3px -1px rgba(0,0,0,0.4);
+}
+.user-card{
+	
+	width: 96%;
+	margin: 1% 2% 0% 2%;
+	float: left;
+	border-top: 1px solid rgba(0,0,0,0.1);
+	border-radius: 0px;
+}
+.profile-image{
+	width: 18%;
+	margin:1%;
+	float: left;
+}
+.profile-img{
+	width: 100%;
+	border-radius:0%;
+	float: left;
+}
+.user-discription{
+	width: 73%;
+	float: left;
+	padding:0% 1%;
+	margin: 1%;
+	text-align: left;
+}
+.des{
+	width: 70%;
+	float: left;
+	margin:0%;
+}
+.user-name{
+	font-size: 0.9em;
+	letter-spacing: 0.05em;
+	margin: 0em;
+	text-decoration: none;
+	font-weight: 500;
+	color: var(--high-back-color);
+}
+.user-name:hover{
+	cursor: pointer;
+}
+.asl{
+	font-size: 0.8em;
+	letter-spacing: 0em;
+	margin: 0.4em 0em;
+	text-decoration: none;
+	font-weight: 400;
+	color: var(--info-color);
+}
+.sports-coach{
+	font-size: 0.8em;
+	letter-spacing: 0em;
+	margin: 0.6em 2em;
+	text-decoration: none;
+	font-weight: 400;
+	color: var(--info-color);
+}
+.user-location{
+	font-size: 0.8em;
+	letter-spacing: 0em;
+	margin: 0.3em 0em;
+	text-decoration: none;
+	font-weight: 400;
+	height: 1.1em;
+	width: 100%;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	color: var(--info-color);
+}
+.user-sports-list{
+	width: 70%;
+	margin: 0.5em 0em;
+	float: left;
+}
+.arena-list{
+	width: 85%;
+}
+
+.sports-image{
+	transition: all 200ms;
+	width: 6%;
+	float: left;
+	padding: 2%;
+	margin: 0% 1%;
+	border-radius: 50%;
+	background-color: var(--high-back-color);
+	border: 0px solid #000000;
+	opacity: 0.5;
+}
+.sports-image:hover{
+	transition: all 200ms;
+	opacity: 0.7;
+}
+.sports-img{
+	width: 100%;
+	float: left;
+	filter: invert(0%);
+}
+.user-action{
+	float: left;
+	width: 30%;
+	margin: 0.5em 0px;
+}
+.action-button{
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 0.8em;
+	width: 96%;
+	margin: 0em 2%;
+	padding: 0.7em 0em;
+	float: left;
+	text-align: center;
+	background-color: transparent;
+	color: var(--high-back-color);
+	border:1px solid var(--high-back-color);
+}
+.action-button:hover{
+	transition: all 100ms;
+	color: var(--high-color);
+	background-color: var(--high-back-color)
+}
+
+
+/* profile view css starts here */
+.section-1{
+	width: 99%;
+	margin: 0.5%;
+	float: left;
+}
+.cover-img{
+	width: 100%;
+	float: left;
+}
+.profile-img-view{
+	float: left;
+	width: 20%;
+	background-color: #fff;
+	padding: 0.5%;
+	margin: -15% 0%  0% 2%;
+}
+.profile-name{
+	float: left;
+	margin: 1.5% 2%;
+	font-size: 1em;
+	letter-spacing: 0.1em;
+	color: var(--high-back-color);
+}
+.addfriend{
+	float: right;
+	margin: 0.2em;
+	padding: 0.3em 2em;
+	text-decoration: none;
+	border: 1px solid var(--high-back-color);
+	color: var(--high-back-color);
+}
+.addfriend:hover{
+	transition: all 300ms;
+	background-color: var(--high-back-color);
+	color: #fff;
+}
+/* right section of user profile vioew */
+.email-info{
+	padding: 0.1em 1em;
+	font-size: 0.8em;
+	color: var(--info-color);
+	margin: 0em;
+	border-top: 1px solid rgba(0,0,0,0.1);
+	float: left;
+	width: 88%;
+	margin:0% 1%;
+}
+.left-head{
+	float: left;
+	width: 30%;
+	font-weight: 500;
+
+}
+.right-info{
+	float: left;
+	width: 70%;
+
+}
+.tab-view{
+	margin-top: 0em;
+}
+.tab-list-view{
+	width: 100%;
+	margin: 0em;
+	padding: 0em;
+	text-align: center;
+
+}
+.tab-list-view > li{
+    list-style: none;
+	float: left;
+	padding: 0.5em 2em;
+	font-size: 0.9em;
+	background-color: rgba(0,0,0,0);
+}
+.tab-list-view > li.active{
+	background-color: var(--high-back-color);
+	color: #fff;
+}
+.tab-list-view > li:hover{
+	cursor: pointer;
+	float: left;
+	background-color: var(--high-back-color);
+	color: #fff;
+}
+.tab-show{
+	transition: all 700ms;
+	width: 100%;
+	border-top: 2px solid var(--high-back-color);
+	float: left;
+	overflow-y: hidden;
+	transition: all 700ms;
+	min-height: 200px;
+	display: none;
+}
+.active-tab{
+	display: block;
+}
+.Friend-card{
+	float: left;
+	width: 45%;
+	margin: 2%;
+}
+.friend-card-img{
+	width: 20%;
+	float: left;
+}
+.friend-card-name{
+   float: left;
+   color: var(--high-back-color);
+   text-decoration: none;
+   margin:1em;
+}
+.friend-card-name:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.sports{
+       		width: 98%;
+       		margin:1%;
+       	}
+       	.sports-card{
+       		width:12%;
+       		margin: 0.5%;
+       		float: left;
+       		background-color: var(--high-back-color);
+       		border-radius: 1px;
+       		opacity: 0.7;
+
+       	}
+       	.sports-card:hover{
+       		transition: all 200ms;
+       		transform: scale(1);
+       		cursor: pointer;
+       		opacity: 1;
+       	}
+       	
+       	.sports-card p{
+       		text-align: center;
+       		margin: 0.5em 0em;
+       		font-size: 0.7em;
+       		font-weight: 500;
+       		color: #fff;
+       	}
+       	.sports-img2{
+       		width: 40%;
+       		opacity: 1;
+       		margin: 20% 30% 0% 30%;
+       	}
+       	.skills-section{
+       		width: 98%;
+       		margin: 1%;
+       		float: left;
+
+       	}
+       	.skill-item{
+       		padding: 0.7em 1em;
+       		background-color: var(--high-back-color);
+       		color: #fff;
+       		float: left;
+       		opacity: 0.9;
+       		letter-spacing: 0.05em;
+       		text-decoration: none;
+       		margin: 0.2em;
+       		font-size: 0.8em;
+       		border-radius: 1px;
+       	}
+       	.skill-item:hover{
+       		transition: all 200ms;
+       		opacity: 1;
+       	}
+       	.edit{
+       		opacity: 0.3;
+       	}
+       	.score{
+       		float: left;
+       		width: 98%;
+       		margin: 1%;
+       	}
+       	.score-item{
+       		padding: 0.6em;
+       		font-size: 2em;
+       		font-weight: 700;
+       		float: left;
+       		background-color: var(--high-back-color);
+       		color: #fff;
+       		text-decoration: none;
+       		margin: 0.5em;
+       	}
+       	.empty-tab-text{
+       		text-align: center;
+       		width: 100%;
+       		float: left;
+       		color: var(--info-color);
+       		font-size: 0.9em;
+       		margin-top: 3em;
+       	}
+
+       	/* map css goes here */
+       	#map {
+       		float: left;
+        height: 200px;
+        width: 100%;
+        margin: 3% 0%;
+       }
+
+       /* club timetable css goes here */
+       .table{
+       	float: left;
+       	width: 90%;
+       	margin: 1% 5%;
+       }
+       .club-time-table-box{
+       	width: 100%;
+       	float: left;
+       	text-align: left;
+       }
+       th{
+         font-weight: 400;
+         color: var(--high-back-color);
+        }
+       td, th{
+       	    font-size: 0.9em;
+       	    padding: 0.5em 2em;
+        	border-bottom:1px solid rgba(0,0,0,0.2); 
+        }
+.aminities-item{
+	float: left;
+	font-size: 0.8em;
+	padding: 0.7em 1em;
+	margin: 0.2em;
+	background-color: var(--high-back-color);
+	color: #fff;
+	text-decoration: none;
+}
+/* match css goes here */
+.tabsofmatch{
+	width: 100%;
+	float: left;
+}
+.matches{
+	width: 100%;
+	float: left;
+}
+.head-match{
+	margin: 0em;
+	padding: 0.7em 10%;
+	font-size: 0.9em;
+	font-weight: 500;
+	color: var(--high-back-color);
+	opacity: 1;
+	border-top: 1px solid var(--high-back-color);
+	width: 80%;
+	float: left;
+	margin-top: 1%;
+}
+.match-list{
+	width: 100%;
+	float: left;
+}
+.match-link{
+	float: left;
+	text-decoration: none;
+	padding: 0.9em 15%;
+	font-size: 0.9em;
+	width: 70%;
+	color: rgba(0,0,0,0.8);
+	background-color: transparent;
+	border-top: 1px solid rgba(0,0,0,0.1);
+}
+.match-link:hover{
+	transition: all 100ms;
+	transition-delay: 10ms;
+	background-color: var(--high-back-color);
+	color: #fff;
+}
+.match-link.active{
+	transition: all 100ms;
+	transition-delay: 10ms;
+	background-color: var(--high-back-color);
+	color: #fff;
+}
+
+/* match card goes here */
+.matches-card{
+	width: 100%;
+	float: left;
+	border-top: 1px solid rgba(0,0,0,0.1);
+}
+.image{
+	width: 14%;
+	padding: 2% 0%;
+	float: left;
+	margin: 1%;
+	opacity: 0.8;
+	background-color: var(--high-back-color);
+}
+.image:hover{
+	transition: all 200ms;
+	opacity: 1;
+}
+.match-sports-img{
+	width: 50%;
+	margin: 3.5% 25%;
+	float: left;
+
+}
+.match-sports-name{
+	width: 100%;
+	float: left;
+	margin: 0em;
+	text-align: center;
+	font-size: 0.7em;
+	color: #fff;
+
+}
+.match-right-des{
+	float: left;
+	width: 80%; 
+	margin: 1%;
+	font-size: 1em;
+}
+.location{
+	float: left;
+	width: 100%;
+	padding:0.2em 1em;
+}
+.location-name{
+	float: left;
+	width: 80%;
+	margin: 0%;
+	letter-spacing: 0.05em;
+}
+.location-distance{
+	float: right;
+	width: 12%;
+	margin: 0%;
+	text-align: right;
+	padding: 0em 3%;
+}
+.match-time{
+	float: left;
+	width: 100%;
+	padding:0.2em  1em;
+}
+.date{
+	float: left;
+	margin: 0%;
+}
+.line{
+	float: left;
+	width: 100%;
+	padding:0.25em 0.5em;
+	font-size: 0.85em;
+	color: rgba(0,0,0,0.7);
+}
+.time-left{
+	float: right;
+	text-align: left;
+	padding: 0em 3%;
+	width:12%;
+	margin: 0%;
+}
+.hosted-by{
+	float: left;
+	margin: 0%;
+	padding: 0%;
+}
+.host-name{
+	text-decoration: none;
+	color: var(--high-back-color);
+}
+
+.player-req{
+	float: left;
+	margin: 0%;
+}
+.player-req-num{
+	float: left;
+	margin: 0%;
+}
+.action-button-match{
+	float: right;
+	text-decoration: none;
+	color: var(--high-back-color);
+	border:1px solid var(--high-back-color);
+	padding: 0.5em 3em;
+	margin-top: -0.8em;
+}
+.action-button-match:hover{
+	background-color: var(--high-back-color);
+	color: #fff;
+}
+.matchShow{
+	float: left;
+	width: 98%;
+	margin:4% 0.5%;
+	background-color: #fff;
+	box-shadow: 0px 1px 3px -1px rgba(0,0,0,0.4);
+	display: none;
+}
+.active{
+	display: block;
+}
+.action-button-match.active{
+	transition: all 200ms;
+	background-color: var(--high-back-color);
+	color: #fff;
+}
+.host-form-input{
+	padding: 1.5% 2%;
+	width: 40%;
+	margin: 1% 2%;
+	float: left;
+}
+.select-input{
+	transition: all 200ms;
+		width: 45%;
+		padding: 1.2% 2%;
+
+}
+input[type=date]{
+	transition: all 200ms;
+		width: 40%;
+		padding: 1% 2%;
+
+}
+input[type=time]{
+	transition: all 200ms;
+		width: 40%;
+		padding: 1% 2%;
+
+}
+.full-input{
+	width: 89%;
+}
+.number-input{
+	width: 20%;
+}
+.friend-input{
+   width: 60%;
+}
+.friend-list-check{
+	width: 96%;
+	margin: 1% 2%;
+	float: left;
+	height: 0px;
+	background-color: #f00f25;
+}
+.height{
+	transition: all 300ms;
+	height: 200px;
+}
+.sub-butt{
+	margin: 1% 2%;
+	width: 20%;
+	float: right;
+	padding: 1em;
+	border: 1px solid var(--high-back-color);
+	color: var(--high-back-color);
+	background-color: transparent;
+}
+.sub-butt:hover{
+	background-color: var(--high-back-color);
+	color: #fff;
+}
+.res-butt{
+	margin: 1% 0%;
+	width: 15%;
+	float: right;
+	padding: 1em;
+	border: 1px solid var(--info-color);
+	color: var(--info-color);
+	background-color: transparent;
+}
+.res-butt:hover{
+	background-color: var(--info-color);
+	color: #fff;
+}
+textarea{
+	font-family: roboto;
+	resize: vertical;
+	overflow: hidden;
+}
